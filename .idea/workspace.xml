@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61d1391c-afb3-4778-8603-fe200b1e98eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/github/common/LiSiInterview.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/github/jdkstatic/HeadHunterProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/JavaProxyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/github/JavaProxyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/cglib/LawyerInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/github/cglib/HeadHunterProxyInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/common/LiSiSpeak.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/common/Speak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/github/common/Interview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/common/ZhangSanSpeak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/github/common/ZhangSanInterview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/jdk/LawyerProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/github/jdk/HeadHunterProxyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/jdkstatic/ZhangSanLawyerSpeak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README/java-proxy-01.png" beforeDir="false" afterPath="$PROJECT_DIR$/README/java-proxy-01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README/java-proxy-02.png" beforeDir="false" afterPath="$PROJECT_DIR$/README/java-proxy-02.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,15 +78,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,7 +135,8 @@
       <option name="presentableId" value="Default" />
       <updated>1639279859727</updated>
       <workItem from="1639279860975" duration="4720000" />
-      <workItem from="1639290184241" duration="7007000" />
+      <workItem from="1639290184241" duration="7111000" />
+      <workItem from="1639302550712" duration="1163000" />
     </task>
     <servers />
   </component>
