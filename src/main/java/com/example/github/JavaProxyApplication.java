@@ -1,11 +1,11 @@
 package com.example.github;
 
-import com.example.github.cglib.LawyerInterceptor;
-import com.example.github.common.LiSiSpeak;
-import com.example.github.common.Speak;
-import com.example.github.common.ZhangSanSpeak;
-import com.example.github.jdk.LawyerProxy;
-import com.example.github.jdkstatic.ZhangSanLawyerSpeak;
+import com.example.github.cglib.HeadHunterProxyInterceptor;
+import com.example.github.common.Interview;
+import com.example.github.common.LiSiInterview;
+import com.example.github.common.ZhangSanInterview;
+import com.example.github.jdk.HeadHunterProxyHandler;
+import com.example.github.jdkstatic.HeadHunterProxy;
 import lombok.extern.slf4j.Slf4j;
 import net.sf.cglib.proxy.Enhancer;
 
@@ -23,8 +23,12 @@ public class JavaProxyApplication {
          */
         log.info("====================================");
         log.info("静态代理---start");
-        Speak speak = new ZhangSanLawyerSpeak();
-        speak.speak();
+        //目标对象
+        Interview interview1 = new ZhangSanInterview();
+        //代理对象
+        Interview proxy1 = new HeadHunterProxy(interview1);
+        //执行代理对象的方法
+        proxy1.interview();
         log.info("静态代理---end");
         /**
          * jdk动态代理
@@ -33,9 +37,13 @@ public class JavaProxyApplication {
          */
         log.info("====================================");
         log.info("jdk动态代理---start");
-        LawyerProxy lawyerProxy = new LawyerProxy(new ZhangSanSpeak());
-        Speak speak1 = (Speak) Proxy.newProxyInstance(JavaProxyApplication.class.getClassLoader(), new Class[]{Speak.class}, lawyerProxy);
-        speak1.speak();
+        //目标对象
+        Interview interview2 = new ZhangSanInterview();
+        HeadHunterProxyHandler proxyHandler = new HeadHunterProxyHandler(interview2);
+        //代理对象
+        Interview proxy2 = (Interview) Proxy.newProxyInstance(JavaProxyApplication.class.getClassLoader(), new Class[]{Interview.class}, proxyHandler);
+        //执行代理对象的方法
+        proxy2.interview();
         log.info("jdk动态代理---end");
         /**
          * cglib动态代理
@@ -43,9 +51,13 @@ public class JavaProxyApplication {
          */
         log.info("====================================");
         log.info("cglib动态代理---start");
-        LawyerInterceptor interceptor = new LawyerInterceptor(new LiSiSpeak());
-        LiSiSpeak liSi = (LiSiSpeak) Enhancer.create(LiSiSpeak.class, interceptor);
-        liSi.speak();
+        //目标对象
+        LiSiInterview interview3 = new LiSiInterview();
+        HeadHunterProxyInterceptor interceptor = new HeadHunterProxyInterceptor(interview3);
+        //代理对象
+        LiSiInterview proxy3 = (LiSiInterview) Enhancer.create(LiSiInterview.class, interceptor);
+        //执行代理对象的方法
+        proxy3.interview();
         log.info("cglib动态代理---end");
 
     }

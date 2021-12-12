@@ -6,19 +6,19 @@ import net.sf.cglib.proxy.MethodProxy;
 
 import java.lang.reflect.Method;
 @Slf4j
-public class LawyerInterceptor implements MethodInterceptor {
+public class HeadHunterProxyInterceptor implements MethodInterceptor {
     private Object object;
 
-    public LawyerInterceptor(Object object) {
+    public HeadHunterProxyInterceptor(Object object) {
         this.object = object;
     }
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
-        if (method.getName().equals("speak")) {
-            log.info("引用法律条文！");
+        if (method.getName().equals("interview")) {
+            log.info("你是谁？来干什么？");
             //反射
             method.invoke(object);
-            log.info("打人是不对的！");
+            log.info("那我们开始吧！");
         }
         return null;
     }

@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61d1391c-afb3-4778-8603-fe200b1e98eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/github/cglib/LawyerInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/github/common/LiSiSpeak.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/github/common/Speak.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/github/common/ZhangSanSpeak.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/github/jdk/LawyerProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/github/jdkstatic/ZhangSanLawyerSpeak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/github/common/LiSiInterview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/github/jdkstatic/HeadHunterProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/JavaProxyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/github/JavaProxyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/cglib/LawyerInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/github/cglib/HeadHunterProxyInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/common/LiSiSpeak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/common/Speak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/github/common/Interview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/common/ZhangSanSpeak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/github/common/ZhangSanInterview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/jdk/LawyerProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/github/jdk/HeadHunterProxyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/github/jdkstatic/ZhangSanLawyerSpeak.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +32,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -53,6 +65,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -131,7 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639279859727</updated>
       <workItem from="1639279860975" duration="4720000" />
-      <workItem from="1639290184241" duration="1635000" />
+      <workItem from="1639290184241" duration="7007000" />
     </task>
     <servers />
   </component>
