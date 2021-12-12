@@ -1,7 +1,7 @@
 # java-proxy
 > java代理模式
 
-[![Build Status](https://ci.spring.io/api/v1/teams/spring-framework/pipelines/spring-framework-5.3.x/jobs/build/badge)](https://ci.spring.io/teams/spring-framework/pipelines/spring-framework-5.3.x?groups=Build")
+[![Build Status](https://travis-ci.org/spring/spring.svg?branch=develop)](https://travis-ci.org/spring/spring)
 
 ## 三种代理模式
 
