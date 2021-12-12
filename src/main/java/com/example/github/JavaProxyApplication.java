@@ -41,7 +41,8 @@ public class JavaProxyApplication {
         Interview interview2 = new ZhangSanInterview();
         HeadHunterProxyHandler proxyHandler = new HeadHunterProxyHandler(interview2);
         //代理对象
-        Interview proxy2 = (Interview) Proxy.newProxyInstance(JavaProxyApplication.class.getClassLoader(), new Class[]{Interview.class}, proxyHandler);
+        Interview proxy2 = (Interview) Proxy.newProxyInstance(JavaProxyApplication.class.getClassLoader(),
+                new Class[]{Interview.class}, proxyHandler);
         //执行代理对象的方法
         proxy2.interview();
         log.info("jdk动态代理---end");

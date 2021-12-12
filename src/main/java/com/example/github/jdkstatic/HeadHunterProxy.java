@@ -15,7 +15,6 @@ public class HeadHunterProxy implements Interview {
     @Override
     public void interview() {
         log.info("你是谁？来干什么？");
-        //反射
         interview.interview();
         log.info("那我们开始吧！");
     }

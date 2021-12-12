@@ -17,6 +17,7 @@
 代理对象与目标对象要实现相同的接口 或者继承相同的父类。  
 代理对象要通过调用相同的方法,来调用目标对象的方法。
 
+
 #### 总结
 好处：可以做到不修改目标对象功能的情况下,对目标功能扩展。
 
@@ -27,7 +28,10 @@
 动态代理的特点：代理对象不需要实现接口
 #### 实现
 jdk动态代理API：Proxy的静态方法newProxyInstance()
-
+```java
+Interview proxy2 = (Interview) Proxy.newProxyInstance(JavaProxyApplication.class.getClassLoader(),
+                new Class[]{Interview.class}, proxyHandler);
+```
 
 #### 总结
 代理对象不需要实现接口,但目标对象一定要实现接口,否则不能使用jdk动态代理
@@ -36,7 +40,9 @@ jdk动态代理API：Proxy的静态方法newProxyInstance()
 #### 实现
 需要引入cglib依赖  
 代理对象实现MethodInterceptor接口,在intercept方法中写逻辑
-
+```java
+LiSiInterview proxy3 = (LiSiInterview) Enhancer.create(LiSiInterview.class, interceptor);
+```
 #### 总结
 目标对象不需要实现接口
 
@@ -253,7 +259,8 @@ public class JavaProxyApplication {
         Interview interview2 = new ZhangSanInterview();
         HeadHunterProxyHandler proxyHandler = new HeadHunterProxyHandler(interview2);
         //代理对象
-        Interview proxy2 = (Interview) Proxy.newProxyInstance(JavaProxyApplication.class.getClassLoader(), new Class[]{Interview.class}, proxyHandler);
+        Interview proxy2 = (Interview) Proxy.newProxyInstance(JavaProxyApplication.class.getClassLoader(),
+                new Class[]{Interview.class}, proxyHandler);
         //执行代理对象的方法
         proxy2.interview();
         log.info("jdk动态代理---end");
